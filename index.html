@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free tip calculator. Calculate tips and split bills easily. Fast, simple, and accurate. Works perfectly on mobile and desktop.">
+    <meta name="keywords" content="tip calculator, tipping calculator, split bill, calculate tip, restaurant tip">
+    <meta name="author" content="Quick Tip Calculator">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tip Calculator - Free & Easy Tip Calculator">
+    <meta property="og:description" content="Calculate tips and split bills instantly. Fast, simple, and mobile-friendly.">
+    <meta property="og:image" content="https://yoursite.com/images/social-preview.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <title>Tip Calculator - Free & Easy Tip Calculator</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google AdSense - Replace with your publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>💵 QuickTip</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#how-to-use">How to Use</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Top Ad Banner (728x90 or 320x100 for mobile) -->
+    <div class="ad-container ad-top">
+        <!-- Replace with actual AdSense code after approval -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content-wrapper">
+            <!-- Calculator Section -->
+            <section class="calculator-section">
+                <div class="calculator-card">
+                    <h2>Calculate Your Tip</h2>
+                    
+                    <!-- Bill Amount -->
+                    <div class="input-group">
+                        <label for="billAmount">Bill Amount ($)</label>
+                        <input type="number" id="billAmount" placeholder="0.00" step="0.01" min="0">
+                    </div>
+
+                    <!-- Tip Percentage -->
+                    <div class="input-group">
+                        <label for="tipPercentage">Tip Percentage</label>
+                        <div class="percentage-buttons">
+                            <button class="tip-btn" data-tip="10">10%</button>
+                            <button class="tip-btn" data-tip="15">15%</button>
+                            <button class="tip-btn active" data-tip="18">18%</button>
+                            <button class="tip-btn" data-tip="20">20%</button>
+                            <button class="tip-btn" data-tip="25">25%</button>
+                        </div>
+                        <div class="custom-tip">
+                            <input type="number" id="customTip" placeholder="Custom %" min="0" max="100">
+                        </div>
+                    </div>
+
+                    <!-- Number of People -->
+                    <div class="input-group">
+                        <label for="numPeople">Number of People</label>
+                        <div class="people-control">
+                            <button class="control-btn" id="decreasePeople">-</button>
+                            <input type="number" id="numPeople" value="1" min="1" max="50" readonly>
+                            <button class="control-btn" id="increasePeople">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button class="calculate-btn" id="calculateBtn">Calculate</button>
+
+                    <!-- Results -->
+                    <div class="results" id="results" style="display: none;">
+                        <div class="result-row">
+                            <span>Tip Amount:</span>
+                            <strong id="tipAmount">$0.00</strong>
+                        </div>
+                        <div class="result-row">
+                            <span>Total Bill:</span>
+                            <strong id="totalBill">$0.00</strong>
+                        </div>
+                        <div class="result-row split-result">
+                            <span>Per Person:</span>
+                            <strong id="perPerson">$0.00</strong>
+                        </div>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button class="reset-btn" id="resetBtn">Reset</button>
+                </div>
+
+                <!-- In-Content Ad -->
+                <div class="ad-container ad-content">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </section>
+
+            <!-- Sidebar with Ad -->
+            <aside class="sidebar">
+                <div class="ad-container ad-sidebar">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </aside>
+        </div>
+
+        <!-- How to Use Section -->
+        <section class="how-to-section" id="how-to-use">
+            <h2>How to Use the Tip Calculator</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Bill Amount</h3>
+                    <p>Type in your total bill amount before tip</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose Tip Percentage</h3>
+                    <p>Select from 10%, 15%, 18%, 20%, 25% or enter custom amount</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Split the Bill</h3>
+                    <p>Enter number of people to split the bill between</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Get Results</h3>
+                    <p>See tip amount, total bill, and amount per person instantly</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipping Guide Section -->
+        <section class="guide-section">
+            <h2>Tipping Guide for 2025</h2>
+            <div class="guide-content">
+                <div class="guide-item">
+                    <h3>Restaurant Service</h3>
+                    <ul>
+                        <li><strong>15%</strong> - Acceptable service</li>
+                        <li><strong>18%</strong> - Good service (standard)</li>
+                        <li><strong>20%</strong> - Great service</li>
+                        <li><strong>25%+</strong> - Exceptional service</li>
+                    </ul>
+                </div>
+                <div class="guide-item">
+                    <h3>Special Situations</h3>
+                    <ul>
+                        <li><strong>Large groups:</strong> 18-20% minimum</li>
+                        <li><strong>Buffet:</strong> 10-15%</li>
+                        <li><strong>Takeout:</strong> 0-10%</li>
+                        <li><strong>Delivery:</strong> 15-20% (minimum $3-5)</li>
+                    </ul>
+                </div>
+                <div class="guide-item">
+                    <h3>Other Services</h3>
+                    <ul>
+                        <li><strong>Bartender:</strong> $1-2 per drink or 15-20%</li>
+                        <li><strong>Barber/Hairstylist:</strong> 15-20%</li>
+                        <li><strong>Taxi/Uber:</strong> 10-15%</li>
+                        <li><strong>Hotel staff:</strong> $1-5 per service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Ad Banner -->
+        <div class="ad-container ad-bottom">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>QuickTip Calculator</h4>
+                    <p>Free, fast, and easy-to-use tip calculator for restaurants and services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#how-to-use">How to Use</a></li>
+                        <li><a href="#tipping-guide">Tipping Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuickTip Calculator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Anchor Ad (shows only on mobile) -->
+    <div class="ad-container ad-mobile-anchor">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
