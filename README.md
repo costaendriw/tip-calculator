@@ -1,473 +1,355 @@
-# 💵 QuickTip Calculator - Complete Setup Guide
+# 💵 QuickTip Calculator
 
-A professional, mobile-responsive tip calculator built to generate passive income through Google AdSense.
+A professional, mobile-responsive tip calculator web application with bill-splitting functionality.
 
-## 📋 Table of Contents
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Step-by-Step Setup](#step-by-step-setup)
-- [Google AdSense Setup](#google-adsense-setup)
-- [Deployment Options](#deployment-options)
-- [SEO Optimization](#seo-optimization)
-- [Monetization Strategy](#monetization-strategy)
-- [Selling on Flippa](#selling-on-flippa)
+---
+
+## 📖 About This Project
+
+QuickTip Calculator is a clean, fast, and user-friendly tool designed to help users calculate tips and split bills at restaurants and service establishments. The application is built with vanilla HTML, CSS, and JavaScript - no frameworks required - making it lightweight and fast.
+
+**Target Audience:** USA/Europe users looking for a simple tip calculation tool  
+**Primary Keywords:** tip calculator, tipping calculator, split bill, calculate tip
 
 ---
 
 ## ✨ Features
 
-- ✅ Clean, modern, mobile-first design
-- ✅ Instant tip calculation
-- ✅ Bill splitting functionality
-- ✅ Preset tip percentages (10%, 15%, 18%, 20%, 25%)
-- ✅ Custom tip percentage option
-- ✅ Fully responsive (desktop, tablet, mobile)
-- ✅ Google AdSense ready
-- ✅ SEO optimized
-- ✅ Privacy Policy & Terms of Service included
-- ✅ Google Analytics compatible
-- ✅ Fast loading (95+ PageSpeed score)
+### Core Functionality
+- **Instant Tip Calculation** - Real-time calculation as you type
+- **Preset Tip Percentages** - Quick buttons for 10%, 15%, 18%, 20%, and 25%
+- **Custom Tip Percentage** - Enter any percentage you want
+- **Bill Splitting** - Divide the total among 1-50 people
+- **Clean Results Display** - Shows tip amount, total bill, and per-person cost
+
+### Technical Features
+- **Mobile-First Design** - Optimized for smartphones and tablets
+- **Responsive Layout** - Works on all screen sizes
+- **Fast Loading** - Optimized for 95+ PageSpeed score
+- **No Dependencies** - Pure HTML/CSS/JavaScript
+- **Browser Storage** - Remembers your last settings
+- **Keyboard Shortcuts** - Ctrl+Enter to calculate, Esc to reset
+- **Accessibility** - Screen reader compatible
+
+### Monetization Ready
+- **Google AdSense Integration** - 5 ad placement zones
+- **SEO Optimized** - Meta tags, Open Graph, structured data
+- **Analytics Ready** - Google Analytics compatible
+- **Legal Pages Included** - Privacy Policy and Terms of Service
 
 ---
 
-## 🚀 Quick Start
+## 📁 Project Structure
 
-### What You Need:
-1. **Domain name** (.com recommended) - $9-12/year
-2. **Hosting** (FREE - Netlify or Vercel)
-3. **Google AdSense account** (FREE)
-4. **Google Analytics** (FREE - optional)
-
-### Total Investment: $9-15 (domain only)
-
----
-
-## 📖 Step-by-Step Setup
-
-### Day 1: Domain & Hosting (30 minutes)
-
-#### 1. Buy Domain
-1. Go to [Porkbun.com](https://porkbun.com) or [Namecheap.com](https://namecheap.com)
-2. Search for your domain (suggestions: quicktip.com, easytipCalc.com, tipfast.com)
-3. Purchase .com domain ($9-12)
-4. Save your login credentials
-
-#### 2. Setup Netlify (Free Hosting)
-1. Go to [Netlify.com](https://netlify.com)
-2. Sign up (use GitHub login for easier workflow)
-3. Click "Add new site" → "Deploy manually"
-4. Keep this tab open (we'll come back to it)
-
----
-
-### Day 1: Deploy Your Site (15 minutes)
-
-#### 3. Prepare Files
-1. Download all files from this project
-2. Make sure you have:
-   - index.html
-   - style.css
-   - script.js
-   - about.html
-   - privacy.html
-   - terms.html
-   - (you'll add images folder later)
-
-#### 4. Deploy to Netlify
-1. Zip all files together (except this README)
-2. In Netlify, drag and drop the zip file
-3. Wait 30 seconds - your site is live!
-4. You'll get a URL like: `random-name-123.netlify.app`
-
-#### 5. Connect Your Domain
-1. In Netlify, go to "Domain settings"
-2. Click "Add custom domain"
-3. Enter your domain (e.g., quicktip.com)
-4. Follow instructions to update DNS settings
-5. Wait 30 minutes - 24 hours for DNS propagation
-
----
-
-### Day 2: Google AdSense Setup (1-2 hours)
-
-#### 6. Apply for Google AdSense
-1. Go to [adsense.google.com](https://adsense.google.com)
-2. Sign up with your Google account
-3. Add your website URL
-4. Complete account information (address, tax info)
-
-#### 7. Add AdSense Verification Code
-1. AdSense will give you a verification code like:
-   ```html
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-   ```
-2. Replace `ca-pub-XXXXXXXXXXXXXXXX` in **index.html** (line 17) with YOUR publisher ID
-3. Also replace in all other HTML files
-4. Re-upload to Netlify
-5. Go back to AdSense and click "Verify"
-
-#### 8. Wait for Approval
-- **Timeline:** 1-7 days (usually 2-3 days)
-- **During wait:** 
-  - Make sure site has quality content
-  - Check that all pages work
-  - Ensure Privacy Policy and Terms are accessible
-
-#### 9. Create Ad Units (After Approval)
-1. In AdSense, go to "Ads" → "By ad unit"
-2. Create 5 ad units:
-   - **Header Banner** (Responsive, horizontal)
-   - **Sidebar** (Responsive, vertical)
-   - **In-Content** (Responsive, rectangle)
-   - **Bottom Banner** (Responsive, horizontal)
-   - **Mobile Anchor** (Anchor ad for mobile)
-
-3. For each ad unit:
-   - Copy the ad code
-   - Replace placeholder code in HTML files
-   - Look for `data-ad-slot="XXXXXXXXXX"` and replace with your slot ID
-
----
-
-### Day 2-3: SEO & Analytics (1 hour)
-
-#### 10. Google Search Console
-1. Go to [search.google.com/search-console](https://search.google.com/search-console)
-2. Click "Add property"
-3. Enter your domain
-4. Verify ownership (use DNS or HTML tag method)
-5. Submit sitemap: `https://yourdomain.com/sitemap.xml`
-
-#### 11. Google Analytics (Optional but Recommended)
-1. Go to [analytics.google.com](https://analytics.google.com)
-2. Create new property
-3. Get tracking code
-4. Add to `<head>` section of all HTML pages
-5. Verify it's working
-
-#### 12. Create Sitemap
-Create a file called `sitemap.xml` in your root directory:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://yourdomain.com/</loc>
-    <priority>1.0</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/privacy.html</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/terms.html</loc>
-    <priority>0.3</priority>
-  </url>
-</urlset>
+```
+tip-calculator/
+│
+├── index.html          # Main calculator page
+├── style.css           # All styling and responsive design
+├── script.js           # Calculator logic and functionality
+├── about.html          # About page
+├── privacy.html        # Privacy Policy (required for AdSense)
+├── terms.html          # Terms of Service (required for AdSense)
+├── sitemap.xml         # SEO sitemap
+├── robots.txt          # Search engine instructions
+└── README.md           # This file
 ```
 
-Replace `yourdomain.com` with your actual domain.
+---
+
+## 🛠️ How It Works
+
+### Calculator Logic
+
+The tip calculator performs the following calculations:
+
+```javascript
+// Basic calculation formula
+tipAmount = billAmount × (tipPercentage / 100)
+totalBill = billAmount + tipAmount
+perPerson = totalBill / numberOfPeople
+```
+
+### User Flow
+
+1. **User enters bill amount** → Validation ensures positive number
+2. **User selects tip percentage** → Either preset button or custom input
+3. **User sets number of people** → Default is 1, can increase/decrease
+4. **Calculator automatically computes** → Debounced for performance
+5. **Results display** → Tip, total, and per-person amounts shown
+
+### Code Architecture
+
+**index.html** - Structure
+- Semantic HTML5
+- Accessible form inputs
+- Ad placement containers
+- Responsive grid layout
+
+**style.css** - Presentation
+- CSS Variables for easy theming
+- Mobile-first responsive design
+- Flexbox and Grid layouts
+- Smooth animations and transitions
+- Print-friendly styles
+
+**script.js** - Functionality
+- Event listeners for all interactions
+- Input validation
+- Real-time calculations with debouncing
+- Local storage for settings persistence
+- Keyboard shortcuts
+- Accessibility enhancements
 
 ---
 
-## 🎨 Customization
+## 🎨 Design System
 
-### Logo & Favicon
-1. Go to [Canva.com](https://canva.com) (free)
-2. Create:
-   - Logo (400x400px)
-   - Favicon (64x64px)
-3. Download as PNG
-4. Create folder: `images/`
-5. Add files:
-   - `images/logo.png`
-   - `images/favicon.png`
-6. Update `index.html` line 14 to point to your favicon
+### Color Palette
+```css
+--primary-color: #2563eb    /* Blue - Main actions */
+--primary-dark: #1e40af     /* Dark Blue - Hover states */
+--secondary-color: #10b981  /* Green - Success/results */
+--danger-color: #ef4444     /* Red - Reset button */
+--text-dark: #1f2937        /* Dark Gray - Body text */
+--text-light: #6b7280       /* Light Gray - Secondary text */
+--bg-light: #f9fafb         /* Very Light Gray - Background */
+--bg-white: #ffffff         /* White - Cards */
+```
 
-### Colors
-Edit `style.css` (lines 15-25) to change color scheme:
+### Typography
+- **Font Stack:** System fonts (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto)
+- **Base Size:** 16px
+- **Line Height:** 1.6 for readability
+
+### Responsive Breakpoints
+- **Mobile:** < 480px
+- **Tablet:** 481px - 768px
+- **Desktop:** 769px - 1200px
+- **Large Desktop:** > 1200px
+
+---
+
+## 💻 Technical Specifications
+
+### Browser Compatibility
+- ✅ Chrome/Edge (latest 2 versions)
+- ✅ Firefox (latest 2 versions)
+- ✅ Safari (latest 2 versions)
+- ✅ iOS Safari (iOS 12+)
+- ✅ Chrome Mobile (Android 8+)
+
+### Performance
+- **Page Load:** < 1 second
+- **First Contentful Paint:** < 1.5 seconds
+- **Time to Interactive:** < 2 seconds
+- **PageSpeed Score:** 95+
+
+### SEO Features
+- Semantic HTML5 structure
+- Meta description and keywords
+- Open Graph tags for social sharing
+- Structured data (JSON-LD ready)
+- Sitemap.xml for search engines
+- Robots.txt for crawlers
+- Fast loading times
+
+### Accessibility
+- ARIA labels where appropriate
+- Keyboard navigation support
+- Screen reader announcements for results
+- High contrast ratios (WCAG AA compliant)
+- Focus indicators on all interactive elements
+
+---
+
+## 📱 Ad Placement Strategy
+
+The project includes 5 strategic ad placement zones:
+
+1. **Header Banner** - Top of page (728x90 desktop, 320x100 mobile)
+2. **Sidebar** - Right side on desktop (300x600 or 160x600)
+3. **In-Content** - Below calculator (responsive)
+4. **Bottom Banner** - Before footer (728x90)
+5. **Mobile Anchor** - Fixed bottom on mobile only
+
+**Ad Format:** Responsive Google AdSense units for maximum fill rate
+
+---
+
+## 🔧 Customization Guide
+
+### Change Site Name
+Find and replace `QuickTip` with your chosen name in all HTML files.
+
+### Change Colors
+Edit `style.css` lines 15-25:
 ```css
 :root {
-    --primary-color: #2563eb;  /* Change this */
-    --primary-dark: #1e40af;   /* And this */
-    --secondary-color: #10b981; /* And this */
+    --primary-color: #YOUR_COLOR;
+    --primary-dark: #YOUR_DARKER_COLOR;
+    --secondary-color: #YOUR_ACCENT_COLOR;
 }
 ```
 
-### Site Name
-Find and replace "QuickTip" with your chosen name in all HTML files.
+### Add Logo
+1. Create logo image (400x400px recommended)
+2. Create favicon (64x64px)
+3. Save in `/images/` folder
+4. Update reference in HTML files
 
----
-
-## 🎯 SEO Optimization
-
-### Keywords to Target
-- "tip calculator" (246K monthly searches)
-- "tipping calculator" (49K)
-- "calculate tip" (90K)
-- "split bill calculator" (12K)
-
-### Content to Add (Optional but Helpful)
-Create blog posts in a `/blog/` folder:
-1. "Tipping Etiquette Guide 2025" (500-800 words)
-2. "How Much to Tip in Different Situations" (600 words)
-3. "Restaurant Tipping: Complete Guide" (800 words)
-
-Use ChatGPT to write these quickly:
-```
-Prompt: "Write a 600-word article about tipping etiquette in restaurants 
-for 2025. Include when to tip, how much, and special situations. 
-Make it SEO-friendly for the keyword 'tipping guide'."
+### Modify Tip Percentages
+Edit `index.html` lines 55-61 to change preset percentages:
+```html
+<button class="tip-btn" data-tip="15">15%</button>
 ```
 
 ---
 
-## 💰 Monetization Strategy
+## 🚀 Deployment
 
-### Month 1: $15-30
-- Focus: Getting initial traffic
-- Actions:
-  - Submit to directories
-  - Share on Reddit (r/InternetIsBeautiful)
-  - Post on Product Hunt
-  - Expected traffic: 300-500 visitors
+### Recommended Hosting: Netlify (Free)
 
-### Month 2: $50-80
-- Focus: SEO traction
-- Actions:
-  - Add 2-3 blog posts
-  - Build backlinks
-  - Optimize ad placements
-  - Expected traffic: 1,000-1,500 visitors
+**Why Netlify:**
+- ✅ Free static site hosting
+- ✅ Automatic HTTPS (SSL)
+- ✅ Global CDN
+- ✅ Instant deployment
+- ✅ Custom domain support
+- ✅ Form handling (for contact forms)
 
-### Month 3: $80-120
-- Focus: Sustained growth
-- Actions:
-  - Continue content creation
-  - A/B test ad positions
-  - Monitor analytics
-  - Expected traffic: 2,000-3,000 visitors
+**Deployment Steps:**
+1. Zip all project files (except README.md)
+2. Go to [netlify.com](https://netlify.com)
+3. Drag and drop zip file
+4. Site is live in 30 seconds!
+
+**Alternative Hosting Options:**
+- **Vercel** - Similar to Netlify, also free
+- **GitHub Pages** - Free, requires GitHub account
+- **CloudFlare Pages** - Free, with CF CDN
+- **Firebase Hosting** - Google's hosting service
 
 ---
 
-## 📣 Promotion Strategy
+## 📊 Analytics & Tracking
 
-### Week 1: Initial Launch
-- [ ] Submit to Reddit (r/InternetIsBeautiful, r/productivity)
-- [ ] Post on Product Hunt
-- [ ] Tweet about launch
-- [ ] Submit to Hacker News (Show HN)
+### Google Analytics Setup
+Add tracking code in `<head>` section of all HTML files:
 
-### Ongoing:
-- [ ] Add to tool directories:
-  - alternativeto.net
-  - tools.co
-  - producthunt.com
-- [ ] Answer Quora questions about tipping
-- [ ] Create Pinterest pins (if visual content)
-
----
-
-## 🏆 Selling on Flippa
-
-### When to Sell
-- Minimum 3 months of revenue history
-- $80-120/month consistent income
-- Growing traffic trend
-- Clean analytics
-
-### Listing Optimization
-
-**Title:**
-```
-Profitable Tip Calculator - $100/Mo AdSense Revenue - 5K Monthly Users - Automated
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
 ```
 
-**Price Strategy:**
-- Multiple: 20-25x monthly revenue
-- If making $100/mo → List at $2,000-2,500
-- Reserve price: 18x monthly revenue
-- Buy Now: 25x monthly revenue
+Replace `GA_MEASUREMENT_ID` with your actual Google Analytics ID.
 
-### Documentation Needed:
-1. Screenshots of AdSense earnings (all 3 months)
-2. Google Analytics reports
-3. Traffic sources breakdown
-4. Search Console data (keywords ranking)
-5. List of all included files
-6. Hosting instructions
-
-### Images for Listing:
-1. Homepage screenshot
-2. Mobile view
-3. AdSense earnings chart
-4. Google Analytics dashboard
-5. Traffic sources
-6. Top keywords
-7. PageSpeed score
-8. Calculator in action
+### Events to Track (Optional)
+- Tip calculations performed
+- Average bill amounts
+- Most used tip percentages
+- Mobile vs desktop usage
 
 ---
 
-## 🛠️ Troubleshooting
+## 🔒 Privacy & Legal
 
-### AdSense Not Showing Ads
-- Check that verification code is correct
-- Ensure site is approved
-- Wait 24-48 hours after adding ad code
-- Clear browser cache
+### Included Legal Pages
 
-### Low Ad Revenue
-- Check ad placement (should be visible but not intrusive)
-- Verify traffic is from tier-1 countries (USA, UK, Canada)
-- Ensure site loads fast (under 3 seconds)
-- Check for policy violations
+**Privacy Policy** (`privacy.html`)
+- Explains data collection practices
+- Covers Google Analytics and AdSense cookies
+- GDPR and CCPA compliant language
+- Required for Google AdSense approval
 
-### No Organic Traffic
-- Submit sitemap to Google Search Console
-- Add more content
-- Build backlinks
-- Be patient (SEO takes 2-3 months)
+**Terms of Service** (`terms.html`)
+- User agreement and disclaimers
+- Limitation of liability
+- Intellectual property rights
+- Required for serious monetization
+
+**Important:** These are templates. Consult a lawyer for legal advice specific to your situation.
 
 ---
 
-## 📊 Expected Results
+## 🧪 Testing Checklist
 
-### Traffic Milestones:
-- Week 1: 50-100 visitors
-- Month 1: 300-600 visitors
-- Month 2: 1,000-1,500 visitors
-- Month 3: 2,500-4,000 visitors
-- Month 6: 5,000-8,000 visitors
+Before going live, test:
 
-### Revenue Milestones:
-- Month 1: $15-30
-- Month 2: $50-80
-- Month 3: $80-120
-- Month 6: $150-250
-
-### Sale Value:
-- After 3 months: $1,500-2,000
-- After 6 months: $2,500-4,000
-
----
-
-## ✅ Pre-Launch Checklist
-
-Before going live, verify:
-- [ ] All pages load correctly
-- [ ] Calculator works on mobile
+- [ ] Calculator works correctly with various inputs
+- [ ] Mobile responsive design (test on real devices)
 - [ ] All links work (no 404 errors)
-- [ ] Privacy Policy is accessible
-- [ ] Terms of Service is accessible
-- [ ] Site loads fast (under 3 seconds)
-- [ ] AdSense code is in place (even if not approved yet)
-- [ ] Domain is connected
-- [ ] HTTPS is working (Netlify does this automatically)
-- [ ] Google Analytics is tracking
-- [ ] Sitemap is submitted
+- [ ] Forms validate properly
+- [ ] Page loads quickly (test with PageSpeed Insights)
+- [ ] Works on different browsers
+- [ ] Privacy Policy and Terms are accessible
+- [ ] HTTPS is enabled
+- [ ] Sitemap is accessible at /sitemap.xml
+- [ ] Robots.txt is accessible at /robots.txt
 
 ---
 
-## 📈 Growth Hacks
+## 🐛 Known Limitations
 
-1. **Reddit Strategy:**
-   - Post genuinely helpful content
-   - "I made this tool because I was frustrated with existing ones"
-   - Include link in comments, not title
-   
-2. **Product Hunt:**
-   - Launch on Tuesday-Thursday (best days)
-   - Ask friends to upvote (ethical)
-   - Reply to all comments
-
-3. **SEO:**
-   - Focus on long-tail keywords
-   - "tip calculator for restaurants"
-   - "how to split bill with tip"
+1. **No Backend** - Everything runs client-side (this is by design for simplicity)
+2. **No User Accounts** - No login system (not needed for this tool)
+3. **No Save History** - Calculations aren't saved to a database
+4. **Currency** - Assumes USD with $ symbol (easy to change)
+5. **Rounding** - Results round to 2 decimal places
 
 ---
 
-## 🎓 Resources
+## 🔮 Future Enhancement Ideas
 
-### Learning:
-- [Google AdSense Help](https://support.google.com/adsense)
-- [Netlify Docs](https://docs.netlify.com)
-- [SEO Guide](https://moz.com/beginners-guide-to-seo)
+Potential features you could add:
 
-### Tools:
-- [Canva](https://canva.com) - Design
-- [Unsplash](https://unsplash.com) - Free images
-- [ChatGPT](https://chat.openai.com) - Content creation
-- [Google PageSpeed](https://pagespeed.web.dev) - Performance testing
-
----
-
-## 💡 Tips for Success
-
-1. **Be Patient:** SEO takes 2-3 months
-2. **Quality Over Quantity:** Better to have 5 great pages than 50 mediocre ones
-3. **Mobile First:** 70%+ of your traffic will be mobile
-4. **Monitor Analytics:** Check weekly, not daily
-5. **Don't Over-Optimize:** Too many ads = poor user experience = less revenue
+- Currency selector (USD, EUR, GBP, etc.)
+- Dark mode toggle
+- Tax calculation option
+- Multiple bill items breakdown
+- Save/share calculation via URL
+- PWA (Progressive Web App) capabilities
+- Print receipt functionality
+- Multi-language support
 
 ---
 
-## 🆘 Need Help?
+## 📄 License
 
-Common issues and solutions:
-
-**Issue:** Site not loading
-- **Solution:** Check Netlify deployment status
-
-**Issue:** AdSense rejected
-- **Solution:** Ensure Privacy Policy is accessible, site has sufficient content
-
-**Issue:** No traffic
-- **Solution:** Be patient, continue adding content, submit to directories
-
-**Issue:** Low CTR on ads
-- **Solution:** Adjust ad placements, ensure they're visible but not intrusive
+This project is provided as-is for personal and commercial use.
 
 ---
 
-## 📝 License
+## 🙋 Support
 
-This project is free to use for personal and commercial purposes.
+For questions about the code:
+- Check the inline comments in the JavaScript file
+- Review the CSS for styling questions
+- HTML is semantic and self-documenting
 
----
-
-## 🚀 Next Steps
-
-1. **Immediate (Today):**
-   - Buy domain
-   - Deploy to Netlify
-   - Apply for AdSense
-
-2. **This Week:**
-   - Get AdSense approved
-   - Add ad units
-   - Submit to Google Search Console
-   - Promote on Reddit/Product Hunt
-
-3. **This Month:**
-   - Monitor analytics
-   - Add blog content
-   - Build backlinks
-   - Optimize ad placement
-
-4. **Month 3:**
-   - Document everything
-   - Prepare Flippa listing
-   - List for sale
+For monetization and deployment questions:
+- Refer to Google AdSense documentation
+- Check Netlify documentation for hosting
+- Review Google Analytics guides for tracking
 
 ---
 
-**Good luck! You're building a passive income asset! 💰**
+## 📝 Changelog
 
-Questions? Issues? Feel free to reach out!
+**Version 1.0** (January 2025)
+- Initial release
+- Complete tip calculator functionality
+- Mobile-responsive design
+- AdSense integration ready
+- SEO optimization
+- Legal pages included
+
+---
+
+**Built with ❤️ for simplicity and performance**
