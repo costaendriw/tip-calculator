@@ -36,6 +36,8 @@ body {
     flex-direction: column;
     position: relative;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -361,6 +363,8 @@ main {
     z-index: 99;
     background: white;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0.5rem 0;
 }
 
 /* ========================================
@@ -486,6 +490,7 @@ footer {
     color: white;
     padding: 2rem 0 1rem;
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .footer-content {
@@ -546,6 +551,15 @@ footer {
     .ad-mobile-anchor {
         display: block;
     }
+    
+    /* Prevent white space at bottom */
+    body {
+        padding-bottom: 60px; /* Space for mobile anchor ad */
+    }
+    
+    footer {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -593,6 +607,21 @@ footer {
     
     header {
         position: relative;
+    }
+    
+    /* Ensure footer is the last element with no space after */
+    footer {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+    
+    body {
+        padding-bottom: 0;
+    }
+    
+    /* Remove any bottom spacing from last elements */
+    .ad-container.ad-bottom {
+        margin-bottom: 0;
     }
 }
 
