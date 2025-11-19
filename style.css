@@ -552,13 +552,9 @@ footer {
         display: block;
     }
     
-    /* Prevent white space at bottom */
-    body {
-        padding-bottom: 60px; /* Space for mobile anchor ad */
-    }
-    
     footer {
         margin-bottom: 0;
+        padding-bottom: 1rem;
     }
 }
 
@@ -599,7 +595,6 @@ footer {
         padding: 1.5rem 1rem;
     }
     
-    /* Fix any potential overlay issues */
     .ad-container {
         position: relative;
         z-index: 1;
@@ -609,7 +604,6 @@ footer {
         position: relative;
     }
     
-    /* Ensure footer is the last element with no space after */
     footer {
         margin-bottom: 0;
         padding-bottom: 1rem;
@@ -617,11 +611,15 @@ footer {
     
     body {
         padding-bottom: 0;
+        margin-bottom: 0;
     }
     
-    /* Remove any bottom spacing from last elements */
     .ad-container.ad-bottom {
         margin-bottom: 0;
+    }
+    
+    .ad-mobile-anchor {
+        display: none !important;
     }
 }
 
