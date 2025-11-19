@@ -34,12 +34,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 /* ========================================
@@ -49,8 +53,7 @@ body {
 header {
     background-color: var(--bg-white);
     box-shadow: var(--shadow-sm);
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
 }
 
@@ -317,8 +320,6 @@ main {
 ======================================== */
 
 .sidebar {
-    position: sticky;
-    top: 80px;
     height: fit-content;
 }
 
@@ -348,8 +349,7 @@ main {
 }
 
 .ad-sidebar {
-    position: sticky;
-    top: 80px;
+    margin: 0 auto;
 }
 
 .ad-mobile-anchor {
@@ -583,6 +583,16 @@ footer {
     .how-to-section,
     .guide-section {
         padding: 1.5rem 1rem;
+    }
+    
+    /* Fix any potential overlay issues */
+    .ad-container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header {
+        position: relative;
     }
 }
 
